@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel & Tour Booking Portfolio Website</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a href="index.html" class="logo"><span>T</span>ravel</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search-button"></i>
+                <i class="fas fa-user" id="login-button"></i>
+            </div>
+            <form action="#" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search" autocomplete="off">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </header>
+        <!-- header section ends -->
+
+        <!-- login form container starts -->
+        <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+            <form onsubmit="" action="#">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="enter your email" autocomplete="off">
+                <input type="password" class="box" placeholder="enter your password" autocomplete="off">
+                <input type="submit" class="button" value="login now">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password?<a href="#"> click here</a></p>
+                <p>don't have an account?<a href="#"> sign up here</a></p>
+            </form>
+        </div>
+        <!-- login form container ends -->
+
+        <!-- home section starts -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>adventure is worthwhile</h3>
+                <p>discover new places with us, adventure awaits</p>
+                <a href="#" class="button">discover more</a>
+            </div>
+            <div class="controls">
+                <span class="video-button active" data-src="./images/cliff.mp4"></span>
+                <span class="video-button" data-src="./images/mountain02.mp4"></span>
+                <span class="video-button" data-src="./images/shore.mp4"></span>
+                <span class="video-button" data-src="./images/county.mp4"></span>
+                <span class="video-button" data-src="./images/river02.mp4"></span>
+            </div>
+            <div class="video-container">
+                <video src="./images/cliff.mp4" class="video-slider" loop autoplay muted></video>
+            </div>
+        </section>
+        <!-- home section ends -->
+
+        <!-- book section starts -->
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="space"></span>
+                <span>n</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+            <div class="box">
+                <div class="image">
+                    <img src="images/undrawdreamworld.svg" alt="">
+                </div>
+                <form onsubmit="" action="#">
+                    <div class="inputBox">
+                        <h3>where to</h3>
+                        <input type="text" placeholder="enter place name" autocomplete="off">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of travelers" autocomplete="off">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="button" value="book now">
+                </form>
+            </div>
+        </section>
+        <!-- book section ends -->
+
+        <!-- packages section starts -->
+        <section class="packages" id="packages">
+            <h1 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/p-1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>switzerland</h3>
+                        <p>Switzerland is a small mountainous country located in the Western-Central Europe.
+                             The landlocked Switzerland is highly industrialized and has many advantages, 
+                             thanks to its great geographical features.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-2.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>suzhou china</h3>
+                        <p>Suzhou is a city in southern Jiangsu of eastern China. During the Zhou dynasty,
+                             a settlement known as Gusu after nearby Mount Gusu became the capital of the state of Wu.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $80.00 <span>$110.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-3.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Lulworth Cove</h3>
+                        <p>Explore 185 million years of geological history as you travel along the Jurassic Coast.
+                             Explore on your own, or hire certified guides at the sites, plus learn interesting facts from your driver.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $85.00 <span>$115.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-4.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Eiffel Tower</h3>
+                        <p>It's literally one of the most beautiful jewelry art piece in the entire world,
+                             from the ancient time. A majestic and wonderful divinity which is the master piece of Paris.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $78.00 <span>$108.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-5.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Acropolis of Athens</h3>
+                        <p>There are a couple of sculptures to observe in the Parthenon,
+                             but none was more important than the lost Athena Parthenos —
+                             a chryselephantine sculpture that was a central object in The Heroes of Olympus.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-6.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Boreal forest of Canada</h3>
+                        <p>Canada's boreal forest is a vast region comprising about one third of the 
+                            circumpolar boreal forest that rings the Northern Hemisphere, 
+                            mostly north of the 50th parallel.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $100.00 <span>$130.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-7.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Slovenia</h3>
+                        <p>Get a taste of Slovenia with this five-day itinerary that takes you through the streets of Ljubljana
+                             — where you'll learn how to make potica and visit Ljubljana Castle —
+                              and then to Lake Bled, where you'll get to watch the sunrise from above with a hot air balloon ride.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $80.00 <span>$110.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-8.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Hallstatt Lake</h3>
+                        <p>Lake Hallstatt is a mountain lake in the Upper Austrian part of the Salzkammergut,
+                             at the northern foot of the Dachstein massif and lies at 508  m above sea level A. 
+                             The center of the municipality of Hallstatt is located on the west bank.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $75.00 <span>$105.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/p-9.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Thay Pagoda</h3>
+                        <p>Thay Temple is also known as Chua Thay or Master's Temple which is situated at Quoc Oai District Vietnam.
+                             This Buddhist temple is also popularly known as Thien Phuc Tu. This temple was established during the reign of Emperor Nhan Tong of Ly dynasty, 11th century.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $70.00 <span>$100.00</span> </div>
+                        <a href="#" class="button">book now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- packages section ends -->
+
+        <!-- services section stats -->
+        <section class="services" id="services">
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-hotel"></i>
+                    <h3>affordable hotels</h3>
+                    <p>Stays with flexible cancellation make it easy to re-book if your plans change.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>food and drinks</h3>
+                    <p>Sydney is, without a doubt, one of the world's great food cities. Your taste buds will be eternally grateful. </p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>safety guides</h3>
+                    <p>We provide corporate, education and leisure travellers with peace of mind, whenever - and wherever - they travel.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>around the world</h3>
+                    <p>All around the world, there's a day trip, multi-night or even multi-week journey to take you there, as you wish.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-plane"></i>
+                    <h3>flight search</h3>
+                    <p>We also have exclusive prices from major airlines. See updates on our newsletter & Facebook. </p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>adventure</h3>
+                    <p>In fact, starting a travel lifestyle now is entirely possible for many people. We welcomes you to discover our best experience. </p>
+                </div>
+            </div>
+        </section>
+        <!-- services section ends -->
+
+        <!-- gallery section starts -->
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/g-1.jpg" alt="">
+                    <div class="content">
+                        <h3>Buddhist temple</h3>
+                        <p>Okunoin is the site of the mausoleum of Kobo Daishi, the founder of Shingon Buddhism
+                             and one of the most revered persons in the religious history of Japan.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-2.jpg" alt="">
+                    <div class="content">
+                        <h3>hot air balloon</h3>
+                        <p>Take flight with a range of Sydney hot air balloon rides that are as memorable as they are magical.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-3.jpg" alt="">
+                    <div class="content">
+                        <h3>Basque Country</h3>
+                        <p>Check this 3-day Basque Country Itinerary to enjoy this unique region, rich in traditions, iconic landmarks, and natural wonders.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-4.jpg" alt="">
+                    <div class="content">
+                        <h3>Patagonia Lake</h3>
+                        <p>Bariloche is a captivating city situated in the stunning Patagonia Lake District in Argentina,
+                             renowned for its mesmerizing natural beauty.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-5.jpg" alt="">
+                    <div class="content">
+                        <h3>Camino</h3>
+                        <p>To illustrate a typical day on the Camino, we used the first day of the last 100km of the Camino Frances.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-6.jpg" alt="">
+                    <div class="content">
+                        <h3>South Pacific islands</h3>
+                        <p>Fiji, Bora Bora, Moorea… They're some of the most alluring islands in the world!</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-7.jpg" alt="">
+                    <div class="content">
+                        <h3>Miami Panorama</h3>
+                        <p>Panorama Tower is a mixed-use 85-story skyscraper in Miami, Florida, United States.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-8.jpg" alt="">
+                    <div class="content">
+                        <h3>Lisbon Portugal</h3>
+                        <p>Lisbon is well connected with public transport, including buses, underground, local trains, ferries, trams and funiculars. </p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-9.jpg" alt="">
+                    <div class="content">
+                        <h3>The Czech Republic</h3>
+                        <p>Prague is the capital city and largest city of the Czech Republic,
+                             one of the larger cities of Central Europe and has served as the capital of the historic region of Bohemia for centuries.</p>
+                        <a href="#" class="button">see more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery section ends -->
+
+        <!-- review section starts -->
+        <section class="review" id="review">
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </h1>
+            <div class="review-slider">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="wrapper">
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic1.jpg" alt="" draggable="false">
+                            <h3>Blanche Pearson</h3>
+                            <p>Incredible sightseeing including the Inca treasures of the Sacred Valley,
+                                 the awe-inspiring Machu Picchu, islands of Lake Titicaca, and two days exploring Peru's Amazon Jungle
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic2.jpg" alt="" draggable="false">
+                            <h3>Joenas Brauers</h3>
+                            <p>Ride the iconic train from Ollantaytambo to Aguas Calientes,
+                                 on the foothills of Machu Picchu.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic3.jpg" alt="" draggable="false">
+                            <h3>Lariach French</h3>
+                            <p>17 nights in hand-picked, quality, 3, 4 and 5-star accommodation including a feature homestay
+                                 in Lake Titicaca and 2 nights at a stunning eco-friendly lodge in the Amazon.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic4.jpg" alt="" draggable="false">
+                            <h3>James Khosravi</h3>
+                            <p>Beat the crowds, arrive early to Machu Picchu and be astounded by the grandeur
+                                 of this bucket list archaeological site with a guided tour.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic5.jpg" alt="" draggable="false">
+                            <h3>James Khosravi</h3>
+                            <p>It is the perfect solution for any tour operator, as it provides full control and data on product ratings.
+                                 It's user-friendly and visually appealing, making it easy to use.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="box">
+                            <img src="images/pic6.jpg" alt="" draggable="false">
+                            <h3>Kristina Zasiadko</h3>
+                            <p>The tourism market is not easy, more than ever,
+                                 we need to use technology to our advantage. Super recommended!
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <!-- review section ends -->
+
+        <!-- contact section starts -->
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </h1>
+            <div class="contact-row">
+                <div class="image">
+                    <img src="images/undrawSmileyface.svg" alt="">
+                </div>
+                <form onsubmit="" action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="name" autocomplete="off">
+                        <input type="email" placeholder="email" autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="phone number" class="phone-number" autocomplete="off">
+                        <input type="text" placeholder="subject" autocomplete="off">
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="leave us your thoughts"></textarea>
+                    <input type="submit" class="button" value="send message">
+                </form>
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+        <!-- footer section starts -->
+        <footer>
+            <div class="box-container">
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>At Travel we're always looking for more ways to provide professional excursion. </p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#">Sydney</a>
+                    <a href="#">Brisbane</a>
+                    <a href="#">Melburne</a>
+                    <a href="#">Canberra</a>
+                    <a href="#">Adelaide</a>
+                    <a href="#">Perth</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home">home</a>
+                    <a href="#book">book</a>
+                    <a href="#packages">packages</a>
+                    <a href="#services">services</a>
+                    <a href="#gallery">gallery</a>
+                    <a href="#review">review</a>
+                    <a href="#contact">contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="https://www.facebook.com/">facebook</a>
+                    <a href="https://www.instagram.com/">instagram</a>
+                    <a href="https://twitter.com/">twitter</a>
+                    <a href="https://au.linkedin.com/">linkedin</a>
+                    <a href="https://www.youtube.com/">youtube</a>
+                </div>
+            </div>
+            <h1 class="credit"> &copy; created by <span> Flora Li </span> | all rights reserved </h1>
+        </footer>
+        <!-- footer section ends -->
+        <script src="js/script.js" type="module"></script>
+        <script src='//code.jquery.com/jquery-2.1.4.min.js'></script>
+    </body>
+</html>
